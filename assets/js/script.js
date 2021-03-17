@@ -1,4 +1,3 @@
-// ;
 /**
  * Swiper 6.4.15
  * Most modern mobile touch slider and framework with hardware accelerated transitions
@@ -15,16 +14,44 @@
  //# sourceMappingURL=swiper-bundle.min.js.map;
 
 
+let portfolioSwiper = new Swiper('.portfolio__slider', {
+   slidesPerView: 4,
+   spaceBetween: 40,
+   loop: true,
+   breakpoints: {
+      1280: {
+         slidesPerView: 4,
+         spaceBetween: 40
+      },
+      600: {
+         slidesPerView: 2,
+         spaceBetween: 20
+      },
+      320: {
+         slidesPerView: 1,
+         spaceBetween: 12
+      },
+   }
+});
+
+let banerSwiper = new Swiper('.banner__slider', {
+   slidesPerView: 1,
+   spaceBetween: 40,
+   loop: true,
+   // breakpoints: {
+   //    1280: {
+   //       spaceBetween: 40
+   //    },
+   //    600: {
+   //       spaceBetween: 20
+   //    },
+   //    320: {
+   //       spaceBetween: 12
+   //    },
+   // }
+});;
 
 
-
-
-// const accordion = document.getElementsByClassName('item-benefits-list');
-// for (i = 0; i < accordion.length; i++) {
-//    accordion[i].addEventListener('click', function () {
-//       this.classList.toggle('active')
-//    })
-// };
 
 const smoothLinks = document.querySelectorAll('a[href^="#"]');
 for (let smoothLink of smoothLinks) {
@@ -55,21 +82,7 @@ for (let smoothLink of smoothLinks) {
 // };
 
 
-// const colors = document.querySelectorAll('.color');
-// colors.forEach((color) => {
-//    color.addEventListener('mouseover', () => {
-//       color.closest('.block-jvc__main').querySelector('.block-jvc__main-img').src = color.getAttribute('data-image');
-//    });
 
-//    color.addEventListener('click', (event) => {
-//       color.closest('.block-jvc__main').querySelectorAll('.color').forEach((item) => {
-//          item.classList.remove('active')
-//       });
-//       event.target.classList.add('active');
-//    });
-
-
-// });
 
 const widgetItem = document.querySelectorAll('.widget__item');
 widgetItem.forEach((img) => {
@@ -81,9 +94,6 @@ widgetItem.forEach((img) => {
       event.currentTarget.classList.add('active');
    });
 });
-
-
-
 
 
 const color = document.querySelectorAll('.product__color');

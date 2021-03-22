@@ -1791,6 +1791,8 @@ button.swiper-pagination-bullet {
 }
 
 .subscribe {
+  font-size: 20px;
+  line-height: 100%;
   padding: 80px 0 40px;
 }
 
@@ -1827,7 +1829,7 @@ button.swiper-pagination-bullet {
 
 .form {
   color: #1a1a1a;
-  font-size: 20px;
+  font-size: inherit;
 }
 
 .form__row {
@@ -2060,7 +2062,7 @@ button.swiper-pagination-bullet {
     padding: 20px;
   }
 
-  .form {
+  .subscribe {
     font-size: 16px;
   }
 

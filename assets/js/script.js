@@ -43,6 +43,10 @@ let banerSwiper = new Swiper('.banner__slider', {
    spaceBetween: 80,
    loop: true,
    autoHeight: true,
+   effect: 'fade',
+   fadeEffect: {
+      crossFade: true
+   },
    navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
@@ -234,7 +238,18 @@ let advantagesSwiper = new Swiper('.advantages__slider', {
       },
    }
 });
-;
+
+let brendsSwiper = new Swiper('.brends__slider', {
+   slidesPerView: 'auto',
+   loop: true,
+   spaceBetween: 40,
+});
+
+let automatizationSwiper = new Swiper('.automatization__slider', {
+   slidesPerView: 'auto',
+   loop: true,
+   spaceBetween: 40,
+});;
 
 
 
